@@ -18,5 +18,8 @@ The goal here is just to share the project directory with the container, so we c
 As you can see in the Dockerfile the apache logs are linked to **stderr** and **stdout**, so you can access them just by doing `docker logs container-api`.  
 The laravel logs are available in the the /storage/logs/ of your project as always (don't forget to set the rights to write in this directory).
 
+# Kitematic
+Don't forget to change the VOLUMES (settings) with your local Laravel project path.
+
 ## Conclusion
 Have fun !
