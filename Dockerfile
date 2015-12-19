@@ -20,4 +20,5 @@ RUN chown -R www-data:www-data /var/lock/apache2 /var/run/apache2 /var/log/apach
 RUN service apache2 stop
 
 EXPOSE 80
+VOLUME ["/var/www/html"]
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
