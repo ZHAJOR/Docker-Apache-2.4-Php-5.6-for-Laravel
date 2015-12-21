@@ -17,8 +17,11 @@ RUN rm -rf /var/www/html
 RUN mkdir -p /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html
 RUN chown -R www-data:www-data /var/lock/apache2 /var/run/apache2 /var/log/apache2 /var/www/html
 
-RUN service apache2 stop
+ADD run.sh /run.sh
+RUN chmod -v +x /run.sh
 
 EXPOSE 80
+
 VOLUME ["/var/www/html"]
-CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+
+CMD ["/run.sh"]
