@@ -6,6 +6,7 @@ A Dockerfile for developers to run a Laravel projet under php 5.6 and apache 2.4
 This configuration was made to run a Laravel project with a postgresql database, as a developer.  
 This should also work with a Lumen project (not tested).  
 The drivers for mysql are available.
+If you need i also made a proxy apache image : [Docker-Apache-2.4-Proxy](https://github.com/ZHAJOR/Docker-Apache-2.4-Proxy)
 
 ## Usage
 First you have to make an image :  
