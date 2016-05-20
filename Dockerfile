@@ -3,7 +3,7 @@ FROM debian:jessie
 MAINTAINER Pierre-Antoine 'ZHAJOR' Tible <antoinetible@gmail.com>
 
 RUN apt-get update
-RUN apt-get -y install apache2 libapache2-mod-php5 php5 php5-mcrypt php5-pgsql php5-mysql
+RUN apt-get -y install apache2 libapache2-mod-php5 php5 php5-mcrypt php5-pgsql php5-mysql php5-gd php5-curl
 RUN apt-get clean
 
 RUN ln -sf /dev/stdout /var/log/apache2/access.log 
