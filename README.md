@@ -12,7 +12,7 @@ If you need i also made a proxy apache image : [Docker-Apache-2.4-Proxy](https:/
 First you have to make an image :  
 ` docker build -t api .`  
 Then a container :  
-`docker run -d -v /Path/To/api/:/var/www/html -p 12345:80 --name=contrainer-api api`  
+`docker run -d -v /Path/To/api/:/var/www/html -p 12345:80 --name=container-api api`  
 The goal here is just to share the project directory with the container, so we can keep working on it.
 
 ## Logs
